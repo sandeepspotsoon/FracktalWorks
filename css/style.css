@@ -328,6 +328,12 @@ a:focus {
 
 .signinandsignup {
     float: right;
+    opacity: 0;
+    visibility: hidden;
+}
+.signinandsignup.active{
+    opacity: 1;
+    visibility: visible;
 }
 .signinandsignup ul li:first-child::after {
     content: "";

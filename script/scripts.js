@@ -59,3 +59,15 @@
      }
 
  });
+
+
+$(window).scroll(function(){
+    var getscrolltop = $(window).scrollTop();
+    var getpositionofsignupsignin = $("#showsignupsignin_js").position().top;
+    if(getscrolltop > getpositionofsignupsignin){
+        $(".signinandsignup").addClass("active");
+    }
+    else{
+        $(".signinandsignup").removeClass("active");
+    }
+});
