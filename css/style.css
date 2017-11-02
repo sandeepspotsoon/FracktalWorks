@@ -331,10 +331,12 @@ a:focus {
     opacity: 0;
     visibility: hidden;
 }
-.signinandsignup.active{
+
+.signinandsignup.active {
     opacity: 1;
     visibility: visible;
 }
+
 .signinandsignup ul li:first-child::after {
     content: "";
     display: inline-block;
@@ -376,17 +378,20 @@ a:focus {
     max-width: calc(100% - 150px);
     width: 100%;
 }
+
 .logoandmenudiv ul li {
     max-width: 20%;
     width: 100%;
     text-align: center;
 }
+
 .logoandmenudiv ul li a {
     padding: 25px 0;
     float: left;
     position: relative;
     width: 100%;
 }
+
 .logoandmenudiv ul {
     position: relative;
 }
@@ -399,35 +404,40 @@ a:focus {
     height: 2px;
     background-color: #f94b4b;
 }
+
 .logodiv {
     position: relative;
 }
+
 .logoandmenudiv ul li.active:nth-child(1) ~ span,
 .logoandmenudiv ul li.inactive:nth-child(1):hover ~ span {
-	left: 0%;
+    left: 0%;
 }
 
 .logoandmenudiv ul li.active:nth-child(2) ~ span,
 .logoandmenudiv ul li.inactive:nth-child(2):hover ~ span {
-	left: 20%;
+    left: 20%;
 }
 
 .logoandmenudiv ul li.active:nth-child(3) ~ span,
 .logoandmenudiv ul li.inactive:nth-child(3):hover ~ span {
-	left: 40%;
+    left: 40%;
 }
 
 .logoandmenudiv ul li.active:nth-child(4) ~ span,
 .logoandmenudiv ul li.inactive:nth-child(4):hover ~ span {
-	left: 60%;
+    left: 60%;
 }
+
 .logoandmenudiv ul li.active:nth-child(5) ~ span,
 .logoandmenudiv ul li.inactive:nth-child(5):hover ~ span {
-	left: 80%;
+    left: 80%;
 }
+
 .logoandmenudiv ul li .logodiv a {
     padding: 0;
 }
+
 /*
 .logoandmenudiv ul li a:before,
 .logodiv:before {
@@ -457,13 +467,15 @@ a:focus {
     transform-origin: left center;
 }*/
 
-
-
 /* Banner Container Starts Here */
 
 section.bodycontainer {
     position: relative;
-    top: 80px;
+    top: 70px;
+}
+
+.displayinline {
+    display: inline;
 }
 
 .ah-words-wrapper {
@@ -663,10 +675,17 @@ section.bodycontainer {
 
 .howitworks-div h4 {
     position: relative;
+    font-size: 1.55rem;
+}
+
+.howitworks-div {
+    max-width: 260px;
 }
 
 .howitworks-div p {
-    max-width: 95%;
+    max-width: 100%;
+    float: left;
+    width: 100%;
 }
 
 .backgroundimage-wrapper {
@@ -725,6 +744,320 @@ section.bodycontainer {
 
 /* Footer Container Ends Here */
 
+/* Profile Dashboard Starts Here */
+
+.mainwrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: table;
+}
+
+.profilemenuwrapper {
+    max-width: 345px;
+    background-color: #666666;
+    padding: 70px 90px;
+}
+
+
+
+.profilemenuwrapper ul li a {
+    color: #a1a1a1;
+}
+
+.profilemenuwrapper ul li a:hover,
+.profilemenuwrapper ul li a.active {
+    color: #fff;
+}
+
+.profilemenuwrapper ul li {
+    padding-bottom: 35px;
+}
+
+.profilemenuwrapper ul li:last-child {
+    padding-bottom: 0;
+}
+
+.themebg {
+    background-color: #f34a38;
+}
+
+.blackcolor {
+    color: #000;
+}
+
+.lightcolorfont {
+    color: #a1a1a1;
+}
+
+.flex1 {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+.flex2 {
+    -webkit-flex: 2;
+    /* Safari 6.1+ */
+    -ms-flex: 2;
+    /* IE 10 */
+    flex: 2;
+}
+
+.profiledetails .phoneinputtype .flex2 span {
+    max-width: 30px;
+    float: left;
+    margin-right: 10px;
+    border-width: 1px 1px 1px 1px;
+    border-color: transparent;
+    border-style: solid;
+    padding: 0 2px;
+}
+.profiledetails.activeinputtype .phoneinputtype .flex2 span{
+    border-color: #666666;
+}
+.phoneinputtype .flex2 .custominputtype {
+    max-width: calc(100% - 30px);
+}
+
+.profilecontentswrapper h3 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+.profiledetails > ul {
+    padding-bottom: 30px;
+}
+.profiledetails > ul:last-child{
+    padding-bottom: 0;
+}
+.profiledetails > ul li.flex1 {
+    padding-right: 20px;
+}
+.profiledetails .custominputtype{
+            border-width: 0 0 1px 0;
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    pointer-events: none;
+}
+.profiledetails.activeinputtype .custominputtype:focus,.editaddress input:focus{
+    border-color: #f34a38;
+}
+.profiledetails.activeinputtype .custominputtype{
+    pointer-events: initial;
+    border-color: #e6e6e6;
+}
+.profiledetails h6 {
+    font-size: 1rem;
+}
+
+.marginbottom30 {
+    margin-bottom: 30px;
+}
+
+.profiledetails address {
+    line-height: 40px;
+}
+.profiledetails a.editaddress{
+    position: relative;
+}
+.profiledetails a.editaddress:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    bottom: 0px;
+    left: 0;
+    display: inline-block
+}
+.profilecontentswrapper {
+    max-width: calc(100% - 345px);
+    padding: 70px 90px;
+    position: relative;
+    overflow: hidden;
+}
+.btnwidth{
+    max-width: 165px;
+}
+.bluebtn{
+    background-color: #2962ff;
+}
+.backandsavebuttons .btn:last-child {
+    margin-right: 10px;
+}
+
+.backandsavebuttons {
+    position: absolute;
+    bottom: 20px;
+    right: 85px;
+}
+.profiledetails textarea.custominputtype {
+    resize: none;
+    height: 220px;
+}
+.afterloginheader img {
+    max-width: 40px;    
+    margin-right: 10px;
+}
+/* Profile Dashboard Ends Here */
+/* Orders Layouts Starts Here */
+.orderswrapper thead{
+    padding-bottom: 30px;
+}
+.orderswrapper tbody tr td{
+    padding: 10px 0;
+}
+.orderswrapper tbody tr.pending{
+    background-color: #f1f1f1;
+}
+.orderswrapper thead tr th{
+    padding: 10px 0 30px;
+    text-align: center;
+}
+.orderswrapper thead tr th:first-child{
+    text-align: left;
+}
+.scrollbars {
+    max-height: 350px;
+}
+.orderdetialswrapper {
+    background-color: #e6e6e6;
+    position: absolute;
+    max-width: 60%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 111;
+    padding: 25px;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+.orderdetialswrapper.active{
+     transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.closeorderdetailswrapper  a{
+        width: 25px;
+    height: 25px;
+    display: flex;
+}
+.closeorderdetailswrapper  a img{
+    margin: auto;
+
+}
+.datesdetails-wrapper >ul > li:first-child {
+    position: relative;
+}
+
+.datesdetails-wrapper > ul > li:first-child:after {
+    content: ":";
+    padding: 0 5px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+}
+.datesdetails-wrapper ul {
+    margin-bottom: 5px;
+}
+.datesdetails-wrapper ul:last-child{
+    margin-bottom: 0;
+}
+
+.orderedproducts .productsdiv .product-image{
+    height: 90px;
+    max-width: 90px;
+}
+.orderedproducts .productsdiv .product-image img{
+    margin: auto;
+}
+.orderedproducts .productsdiv .product-description{
+    max-width: calc(100% - 90px);
+}
+.orderedproducts .productsdiv .product-description .statusandamount ul li span{
+    max-width: 80px;
+    width: 100%;
+}
+.orderedproducts .productsdiv {
+    border-bottom: 1px solid #cbcbcb;
+}
+.orderdetialswrapper .detailswrapper .profiledetails{
+     align-items: flex-end;
+    -webkit-align-items: flex-end;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.greenbg{
+    background-color: #4caf50;
+}
+/* Orders Layout Ends Here */
+
+/* Order Status Wrapper Starts Here */
+.order-status-bar ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.order-status-bar ul li:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    position: absolute;
+    display: inline-block;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    border-radius: 50%;
+        z-index: 1;
+}
+.order-status-bar ul li.active:after,.order-status-bar ul li.active:before{
+    background-color: #3f72fc;
+}
+.order-status-bar ul li:before{
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    bottom: -11px;
+    z-index: 1;
+    left: 50%;
+}
+.order-status-bar ul li:last-child:before{
+    content: none;
+}
+.triggerOrderDetails_js:hover{
+    color: #f94b4b;
+}
+
+/* Order Status Ends Here */
+/* Address Book Starts Here */
+.marginbottom20{
+    margin-bottom: 20px;
+}
+.addresseswrapper a {
+    color: #4576ff;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.addresseswrapper a:last-child{
+    margin-right: 0;
+}
+.editaddress input {
+    border-width: 0 0 1px 0;
+    outline: none;
+    box-shadow: none;
+}
+.profiledetails.editaddress > ul {
+    padding-bottom: 15px;
+}
+/* Address Book Ends Here */
 /* Media Queries Starts Here */
 
 @media(min-width:992px) and (max-width:1199px) {
@@ -733,8 +1066,22 @@ section.bodycontainer {
         left: 0;
         top: 0;
     }
+    .orderdetialswrapper {
+    max-width: 80%;
+    }
+   
 }
-
+@media(min-width:768px) and (max-width:1199px){
+     .profilemenuwrapper {
+    max-width: 240px;  
+}
+    .profilecontentswrapper{
+            max-width: calc(100% - 240px);
+    }
+    .profilemenuwrapper,.profilecontentswrapper{
+         padding: 70px 40px;
+    }
+}
 @media(min-width:768px) and (max-width:991px) {
     .logoandmenudiv ul li:first-child {
         padding-left: 20px;
@@ -744,7 +1091,6 @@ section.bodycontainer {
     }
     .ourclients-wrapper ul li {
         max-width: 80px;
-        ;
     }
     .howitworks-div h4 {
         font-size: 1.08rem;
@@ -755,8 +1101,16 @@ section.bodycontainer {
     html {
         font-size: 12px !important;
     }
-    .logoandmenudiv{
+    .logoandmenudiv {
         max-width: calc(100% - 0px);
+    }
+    .profilecontentswrapper .backandsavebuttons {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+    .orderdetialswrapper{
+        max-width: 100%;
     }
 }
 
@@ -770,19 +1124,65 @@ section.bodycontainer {
 
 @media(min-width:240px) and (max-width:767px) {
     .logoandmenudiv {
-    max-width: calc(100% - 0px);
+        max-width: calc(100% - 0px);
     }
     .logoandmenudiv ul li {
-    max-width: 100%;
+        max-width: 100%;
     }
     .logoandmenudiv ul .hoveroverline {
-    display: none;
+        display: none;
     }
-    .logoandmenudiv ul li.active a{
+    .logoandmenudiv ul li.active a {
         color: #f94b4b;
     }
     .howitworks-div {
-    margin-bottom: 30px;
+        margin-bottom: 30px;
+        float: left !important;
+    }
+    .profilewrapper{
+        display: block;
+    }
+    .profilemenuwrapper,.profilecontentswrapper {
+    padding: 40px 20px;
+        max-width: calc(100% - 0px);
+}
+    .backandsavebuttons {
+    position: relative;
+    bottom: 0;
+    right: 0;        
+    margin-top: 30px;
+}
+    .backandsavebuttons > button {
+    float: left !important;
+    max-width: 50%;
+    width: 100%;
+}
+    .backandsavebuttons .btn:last-child {
+    margin-right: 0;
+}
+    .profiledetails h6 {
+    margin-top: 50px;
+}
+    .orderdetialswrapper{
+        max-width: 100%;
+        overflow-y: scroll;
+    }
+    .orderdetialswrapper .detailswrapper .profiledetails {
+    flex-direction: column;
+        -webkit-flex-direction: column;
+            align-items:center;
+    -webkit-align-items: center;
+}
+    .orderdetialswrapper .detailswrapper .profiledetails a {
+    margin-bottom: 10px;
+}
+    .orderedproducts .productsdiv .product-description .statusandamount ul li span {
+    max-width: initial;
+    width: initial;
+    text-align: left;
+}
+    .profiledetails > ul li.flex1 {
+    text-align: left;
 }
 }
 
@@ -896,6 +1296,13 @@ section.bodycontainer {
     .futureofmaufacturing-wrapper img {
         float: none !important;
         display: inline-block;
+    }
+}
+
+@media(min-width:768px) {
+    .centereddiv {
+        display: table;
+        margin: 0 auto;
     }
 }
 
